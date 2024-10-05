@@ -1,3 +1,17 @@
 body {
-  background-color: yellow;
+  background-image: url(https://i.imgur.com/pp2MyOH.jpeg);
+  height: 102vh;
+  margin: 0;
+}
+.weather-app {
+  background-color: white;
+  max-width: 450px;
+  margin: 0px auto;
+  aspect-ratio: 3/4;
+  border-radius: 100% / 125% 125% 80% 80%;
+  text-align: center;
+  padding: 20px auto;
+}
+h1 {
+  text-align: center;
 }
