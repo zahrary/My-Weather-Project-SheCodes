@@ -1,5 +1,5 @@
 body {
-  background-color: #77a1ce;
+  background-color: #8e9dc7;
   font-family: "Quicksand", sans-serif;
 }
 .weather-app {
@@ -7,6 +7,23 @@ body {
   max-width: 600px;
   margin: 0px auto;
   margin-top: 20px;
-  padding: 50px;
+  padding: 45px 50px;
   border-radius: 25px;
+}
+.search-form-input {
+  border: none;
+  background-color: #f5ebe0;
+  padding: 15px 20px;
+  width: 80%;
+  font-size: medium;
+  border-radius: 10px;
+}
+.search-form-button {
+  background-color: #f2b183;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 5px;
+  font-size: medium;
+  color: white;
 }
