@@ -1,17 +1,11 @@
 body {
   background-image: url(https://i.imgur.com/pp2MyOH.jpeg);
-  height: 102vh;
-  margin: 0;
+  font-family: "Quicksand", sans-serif;
 }
 .weather-app {
   background-color: white;
-  max-width: 450px;
+  max-width: 440px;
   margin: 0px auto;
-  aspect-ratio: 3/4;
-  border-radius: 100% / 125% 125% 80% 80%;
   text-align: center;
   padding: 20px auto;
-}
-h1 {
-  text-align: center;
 }
