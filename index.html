@@ -15,12 +15,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="search" class="search-form-button" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-texts">
           <div class="details">
-            <h1 class="city">Vienna</h1>
+            <h1 class="city" id="city">Vienna</h1>
             Tuesday 14:49, scattered clouds <br />
             Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
           </div>
@@ -54,5 +55,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
