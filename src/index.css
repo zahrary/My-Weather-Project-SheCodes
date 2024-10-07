@@ -73,16 +73,17 @@ footer {
 }
 .tempo {
   font-size: 88px;
+  line-height: 88px;
   font-weight: bold;
   color: #534255;
-  margin-left: 10px;
+  margin-left: 0;
 }
 .icon {
-  font-size: 44px;
-  margin-top: 22px;
+  width: 88px;
+  height: 88px;
 }
 .degree {
-  margin-top: 17px;
+  margin-top: 9px;
   font-size: 28px;
   font-weight: bold;
   color: #534255;

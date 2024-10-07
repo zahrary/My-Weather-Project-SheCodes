@@ -9,11 +9,18 @@ function refreshWeather(response) {
   let date = new Date(response.data.time * 1000);
   windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
   timeElement.innerHTML = formatDate(date);
-
   cityElement.innerHTML = response.data.city;
   weatherDescription.innerHTML = response.data.condition.description;
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
   temperatureElement.innerHTML = Math.round(temperature);
+  let icon = document.querySelector("#img-icon");
+
+  icon.innerHTML = `<img
+      src="${response.data.condition.icon_url}"
+      class="icon"
+      alt=""
+    />
+  `;
 }
 function formatDate(date) {
   let hour = date.getHours();
@@ -42,7 +49,6 @@ function searchCity(city) {
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
-
   searchCity(searchInput.value);
 }
 
