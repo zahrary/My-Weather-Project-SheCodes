@@ -16,7 +16,7 @@ a {
   background-color: white;
   max-width: 550px;
   margin: 0px auto;
-  margin-top: 40px;
+  margin-top: 35px;
   padding: 35px 45px;
   border-radius: 25px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.2);
@@ -101,8 +101,10 @@ footer {
   color: #8e9dc7;
 }
 .weather-forecast-icon {
-  font-size: 38px;
-  text-align: center;
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
 }
 .weather-forecast-temperatures {
   text-align: center;
