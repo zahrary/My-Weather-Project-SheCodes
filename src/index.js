@@ -21,6 +21,7 @@ function refreshWeather(response) {
       alt=""
     />
   `;
+  getForecast(response.data.city);
 }
 function formatDate(date) {
   let hour = date.getHours();
@@ -56,7 +57,14 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Vienna");
 
-function diplayForecast() {
+function getForecast(city) {
+  let apiKey = "be23329f1oeeef2ee4ea0141bf0ba2tf";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
   let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
   let forecastHtml = "";
 
@@ -76,4 +84,3 @@ function diplayForecast() {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
-diplayForecast();
